@@ -1,14 +1,20 @@
 {
   "name": "chat-lib",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": {
+    "email": "thomas.milotti@gmail.com",
+    "name": "Thomas Milotti"
+  },
+  "description": "Chat Lib",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "create-lib": "ng-packagr -p ng-package.json"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +27,11 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@types/moment": "^2.13.0",
     "core-js": "^2.4.1",
+    "ionic": "^3.19.0",
+    "ionic-angular": "^3.9.2",
+    "moment": "^2.19.2",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
@@ -41,6 +51,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
